@@ -75,7 +75,7 @@ jobs:
       - name: Build frontend image
         run: |
           docker build \
-            --build-arg REACT_APP_MOVIE_API_URL=http://localhost:5000 \
+            --build-arg REACT_APP_MOVIE_API_URL=http://aaed1c5f042e94d07aac9317ac1d558b-243177198.us-east-1.elb.amazonaws.com \
             --tag movie-picture-frontend:${{ github.sha }} \
             starter/frontend
 
