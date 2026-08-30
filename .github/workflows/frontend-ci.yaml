@@ -83,6 +83,10 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
+      - name: Build frontend application
+        working-directory: starter/frontend
+        run: npm run build
+
       - name: Build Docker image
         run: |
           docker build \
